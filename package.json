@@ -1,0 +1,21 @@
+{
+  "name": "ignite-node_project-01",
+  "version": "1.0.0",
+  "description": "> Recebe mais updates que o express atualmente. > Mais popular e muito parecido com a sintaxe do express > Suporte para typescript > Suporte para assincronismo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.13.0",
+    "tsx": "^3.12.3",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "fastify": "^4.13.0"
+  }
+}
