@@ -26,3 +26,8 @@ npx tsc getting-started-typescript/type.ts
 ``` bash
 npm i -D tsx
 ```
+
+# Knex commands
+npm run knex -- migrate:make migrationName
+npm run knex -- migrate:latest
+npm run knex -- migrate:rollback
