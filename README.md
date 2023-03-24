@@ -28,6 +28,8 @@ npm i -D tsx
 ```
 
 # Knex commands
-npm run knex -- migrate:make migrationName
-npm run knex -- migrate:latest
-npm run knex -- migrate:rollback
+- npm run knex -- migrate:make migrationName
+- npm run knex -- migrate:latest
+- npm run knex -- migrate:rollback
+
+# Funcionalidades da aplicação
