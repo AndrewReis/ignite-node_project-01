@@ -14,7 +14,7 @@
   "author": "andrewReis",
   "license": "ISC",
   "engines": {
-    "node": ">=18"
+    "node": "18"
   },
   "dependencies": {
     "@fastify/cookie": "^8.3.0",
