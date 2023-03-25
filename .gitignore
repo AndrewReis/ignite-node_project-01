@@ -1,6 +1,8 @@
 node_modules
 dist
 build
-tmp/app.db
+src/database/dev.db
+tmp/test.db
 
 .env
+.env.test

@@ -4,12 +4,12 @@ import { knex as setupKnex, Knex } from "knex";
 export const config: Knex.Config = {
   client: 'sqlite',
   connection: {
-    filename: env.DATABASE_URL
+    filename: env.NODE_ENV === 'test' ? env.TEST_DATABASE_URL : env.DEV_DATABASE_URL
   },
   useNullAsDefault: true,
   migrations: {
     extension: 'ts',
-    directory: './tmp/migrations'
+    directory: './src/database/migrations'
   }
 }
 

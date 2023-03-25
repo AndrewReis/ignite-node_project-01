@@ -1,8 +1,9 @@
 import { FastifyInstance } from "fastify";
-import crypto from 'node:crypto';
-import { z } from "zod";
+import crypto              from 'node:crypto';
+import { z }               from "zod";
 
 import { connection } from "../database";
+
 import { checkSessionIdExist } from "../middlewares/check-session-id-exists";
 
 export async function transactionRoutes(app: FastifyInstance) {
@@ -44,7 +45,7 @@ export async function transactionRoutes(app: FastifyInstance) {
     return { summary };
   });
 
-  app.post('/create-transaction', async (req, reply) => {
+  app.post('/transactions', async (req, reply) => {
     const transactionRequest = z.object({
       title: z.string(),
       amount: z.number(),
