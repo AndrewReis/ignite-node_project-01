@@ -1,7 +1,7 @@
 {
   "name": "ignite-node_project-01",
   "version": "1.0.0",
-  "description": "> Recebe mais updates que o express atualmente. > Mais popular e muito parecido com a sintaxe do express > Suporte para typescript > Suporte para assincronismo",
+  "description": "First Project Ignite node",
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
@@ -10,24 +10,25 @@
     "knex": "node --loader tsx ./node_modules/.bin/knex",
     "test": "vitest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["ignite", "node", "2023"],
+  "author": "andrewReis",
   "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "@fastify/cookie": "^8.3.0",
     "dotenv": "^16.0.3",
     "fastify": "^4.13.0",
     "knex": "^2.4.2",
-    "sqlite3": "^5.1.4",
+    "pg": "^8.10.0",
     "vitest": "^0.29.7",
     "zod": "^3.20.6"
-  },
-  "engines": {
-    "node": "18"
   },
   "devDependencies": {
     "@types/node": "^18.13.0",
     "@types/supertest": "^2.0.12",
+    "sqlite3": "^5.1.4",
     "supertest": "^6.3.3",
     "tsup": "^6.7.0",
     "tsx": "^3.12.3",
